@@ -1,0 +1,25 @@
+def rotate_matrix(mat):
+    n = len(mat)
+    
+    # Transpose
+    for i in range(n):
+        for j in range(i, n):
+            mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
+    
+    # Reverse each row
+    for i in range(n):
+        for j in range(n // 2):
+            mat[i][j], mat[i][n - j - 1] = mat[i][n - j - 1], mat[i][j]
+    
+    return mat
+
+
+# Test
+mat = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+for row in rotate_matrix(mat):
+    print(row)
