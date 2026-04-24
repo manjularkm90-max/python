@@ -1,0 +1,21 @@
+def is_rotation(s1, s2):
+    if len(s1) != len(s2):
+        return False
+    
+    n = len(s1)
+    
+    for i in range(n):
+        match = True
+        
+        for j in range(n):
+            if s1[(i + j) % n] != s2[j]:
+                match = False
+                break
+        
+        if match:
+            return True
+    
+    return False
+
+
+print(is_rotation("abcd", "cdab"))  # True
