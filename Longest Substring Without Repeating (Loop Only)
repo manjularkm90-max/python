@@ -1,0 +1,20 @@
+def longest_unique_substring(s):
+    max_len = 0
+    result = ""
+    
+    for i in range(len(s)):
+        seen = ""
+        
+        for j in range(i, len(s)):
+            if s[j] in seen:
+                break
+            seen += s[j]
+        
+        if len(seen) > max_len:
+            max_len = len(seen)
+            result = seen
+    
+    return result
+
+
+print(longest_unique_substring("abcabcbb"))  # Output: abc
