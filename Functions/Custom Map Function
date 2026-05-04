@@ -1,0 +1,7 @@
+def my_map(func, iterable):
+    result = []
+    for item in iterable:
+        result.append(func(item))
+    return result
+
+print(my_map(lambda x: x * 2, [1, 2, 3]))
