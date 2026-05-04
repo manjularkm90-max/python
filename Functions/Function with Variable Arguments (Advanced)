@@ -1,0 +1,8 @@
+def max_product(*args):
+    max_prod = float('-inf')
+    for i in range(len(args)):
+        for j in range(i + 1, len(args)):
+            max_prod = max(max_prod, args[i] * args[j])
+    return max_prod
+
+print(max_product(1, 5, 3, 9, 2))
