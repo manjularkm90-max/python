@@ -1,0 +1,10 @@
+def power(n):
+    def inner(x):
+        return x ** n
+    return inner
+
+square = power(2)
+cube = power(3)
+
+print(square(5))  # 25
+print(cube(3))    # 27
