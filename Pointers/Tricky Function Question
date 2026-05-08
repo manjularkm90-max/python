@@ -1,0 +1,7 @@
+def change(x):
+    x = [10, 20]
+
+a = [1, 2]
+change(a)
+
+print(a)
