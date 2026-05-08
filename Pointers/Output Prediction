@@ -1,0 +1,7 @@
+def modify(lst):
+    lst.append(100)
+
+a = [1, 2, 3]
+modify(a)
+
+print(a)
