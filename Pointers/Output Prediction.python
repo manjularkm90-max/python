@@ -1,0 +1,7 @@
+x = "hello"
+y = x
+
+x += " world"
+
+print(x)
+print(y)
