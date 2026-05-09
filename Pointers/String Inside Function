@@ -1,0 +1,8 @@
+def test(s):
+    s += " world"
+
+x = "hello"
+
+test(x)
+
+print(x)
