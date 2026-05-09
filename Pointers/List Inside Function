@@ -1,0 +1,7 @@
+def test(data):
+    data += [100]
+
+a = [1, 2]
+test(a)
+
+print(a)
