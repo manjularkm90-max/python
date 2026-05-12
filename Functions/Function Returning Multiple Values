@@ -1,0 +1,12 @@
+def calculations(a, b):
+    total = a + b
+    product = a * b
+    average = total / 2
+
+    return total, product, average
+
+s, p, avg = calculations(10, 20)
+
+print("Sum:", s)
+print("Product:", p)
+print("Average:", avg)
