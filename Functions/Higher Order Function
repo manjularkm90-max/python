@@ -1,0 +1,9 @@
+def operation(func, x, y):
+    return func(x, y)
+
+def add(a, b):
+    return a + b
+
+result = operation(add, 10, 20)
+
+print(result)
