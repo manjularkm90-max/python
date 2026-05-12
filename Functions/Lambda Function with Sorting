@@ -1,0 +1,9 @@
+students = [
+    ("Arun", 85),
+    ("Priya", 95),
+    ("Kavin", 75)
+]
+
+students.sort(key=lambda x: x[1])
+
+print(students)
