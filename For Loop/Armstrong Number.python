@@ -1,0 +1,15 @@
+num = 153
+
+temp = num
+
+total = 0
+
+for digit in str(num):
+
+    total += int(digit) ** 3
+
+if total == temp:
+    print("Armstrong Number")
+
+else:
+    print("Not Armstrong")
