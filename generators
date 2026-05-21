@@ -1,0 +1,9 @@
+def test():
+    yield 1
+    yield 2
+    yield 3
+
+x = test()
+
+for i in x:
+    print(i)
