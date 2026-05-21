@@ -1,0 +1,12 @@
+def outer(func):
+    def inner():
+        print("Before")
+        func()
+        print("After")
+    return inner
+
+@outer
+def hello():
+    print("Hello")
+
+hello()
